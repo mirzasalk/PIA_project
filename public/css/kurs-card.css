@@ -1,0 +1,19 @@
+.tagsField {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    padding: 0.5em;
+}
+.tag {
+    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    color: white;
+    width: 5em;
+    height: 1.5em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.2em;
+}

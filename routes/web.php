@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KursContoller;
 use App\Models\Course;
 use Illuminate\Support\Facades\Route;
 
@@ -14,17 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/kursevi', function () {
-    return view('kursevi',[
-        'naslov'=>"Poslednji kursevi",
-        "kursevi"=> Course::all()
-    ]);
-});
-Route::get('/kurs/{kurs}', function (Course $kurs) {
-    return view('kurs',[
-        "kurs"=> $kurs
-    ]);
-});
+Route::get('/kursevi', [KursContoller::class, "getAll"]);
+
+Route::get('/kurs/{kurs}', [KursContoller::class, "getById"] );
+
 Route::get('/', function () {
     return view('layout');
 });
