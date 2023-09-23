@@ -1,7 +1,7 @@
 <link rel="stylesheet" href={{ asset('css/search.css') }}>
 
     
-
+<form action="/kursevi">
 <div id="search">
 	<svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
 		<rect class="bar"/>
@@ -42,8 +42,10 @@
 			<path class="particle plus"/>
 		</g>
 	</svg>
-	<input type=search name=q aria-label="Search for inspiration"/>
+	<input type=search name=search aria-label="Search for inspiration"/>
 </div>
+
+</form>
 
 <div id="results">
 	

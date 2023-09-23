@@ -11,7 +11,7 @@
     <p>{{$kurs->description}}</p>
     <div class="tagsField">
    @foreach ($tagsTemp as $item) 
-   <p class="tag">{{$item}}</p>
+   <a class="tag" href="/kursevi/?tag={{$item}}">{{$item}}</a>
    @endforeach
 </div>
 </x-card>   

@@ -4,7 +4,6 @@
 
 <div >
 
-<h1>Kursevi</h1>
 
 @include('partials._search')
 

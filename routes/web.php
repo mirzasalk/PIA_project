@@ -17,8 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/kursevi', [KursContoller::class, "getAll"]);
 
+
+Route::get('/kurs/kreiraj', [KursContoller::class, "create"] );
+
+
+Route::post('/kursevi', [KursContoller::class, "store"] );
+
+
 Route::get('/kurs/{kurs}', [KursContoller::class, "getById"] );
 
-Route::get('/', function () {
-    return view('layout');
-});
+
+// Route::get('/kurs/{kurs}', [KursContoller::class, "getById"] );

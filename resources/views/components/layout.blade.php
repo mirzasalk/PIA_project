@@ -18,10 +18,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/">Početna</a></li>
-                <li><a href="/">O nama</a></li>
+                <li><a href="/kursevi">Početna</a></li>
+                <li><a href="/kursevi">O nama</a></li>
                 <li><a href="/kursevi">Kursevi</a></li>
-                <li><a href="/">Kontakt</a></li>
+                <li><a href="/kursevi">Kontakt</a></li>
             </ul>
         </nav>
     </header>
