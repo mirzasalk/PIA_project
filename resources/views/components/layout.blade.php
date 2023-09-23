@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    
+    <x-iskacucaporuka/>
     <main>
        {{$slot}}
     </main>

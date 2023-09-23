@@ -32,7 +32,7 @@ class KursContoller extends Controller
             'time'=>'required',
         ]);
         Course::create($formFields);
-        return redirect("/kursevi");
+        return redirect("/kursevi")->with('poruka',"Kurs uspesno kreiran");
         
     }
 }
