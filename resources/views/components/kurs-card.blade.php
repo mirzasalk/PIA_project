@@ -6,6 +6,7 @@
 
 <x-card>
 <a href="/kurs/{{$kurs->id}}">
+    <img class="slikaKurs" src="{{asset('storage/'.$kurs->kursSlika)}}" alt="SlikaKursa">
     <h2>{{$kurs->title}}</h2>
     </a>
     <p>{{$kurs->description}}</p>

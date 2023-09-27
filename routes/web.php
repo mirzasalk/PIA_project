@@ -23,8 +23,12 @@ Route::get('/kurs/kreiraj', [KursContoller::class, "create"] );
 
 Route::post('/kursevi', [KursContoller::class, "store"] );
 
+Route::put('/kurs/{kurs}', [KursContoller::class, "update"] );
 
 Route::get('/kurs/{kurs}', [KursContoller::class, "getById"] );
+
+
+Route::get('/kurs/{kurs}/izmena', [KursContoller::class, "edit"] );
 
 
 // Route::get('/kurs/{kurs}', [KursContoller::class, "getById"] );

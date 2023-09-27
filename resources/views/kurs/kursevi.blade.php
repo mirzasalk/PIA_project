@@ -12,6 +12,9 @@
 <x-kurs-card :kurs="$kurs"/>
 
 @endforeach
+<div class="paginacijaLink">
+    {{$kursevi->links()}}
+</div>
 
 </div>
 

@@ -9,7 +9,7 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable =['title','description','tags','time']; 
+    protected $fillable =['title','description','tags','time','kursSlika']; 
     public function scopeFilter($query,array $filters){
         if($filters['tag']??false){
             $query->where('tags','like','%'. request('tag').'%');
